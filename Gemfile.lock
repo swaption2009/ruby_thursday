@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/thoughtbot/shoulda-matchers.git
+  revision: b58f0a1807a4346399aa3b9bb5b88923ab9aa2e5
+  specs:
+    shoulda-matchers (3.1.1)
+      activesupport (>= 4.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -179,8 +186,6 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    shoulda-matchers (3.1.1)
-      activesupport (>= 4.0.0)
     simple_bdd (0.1.0)
     slop (3.6.0)
     spring (1.7.1)
@@ -228,7 +233,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
-  shoulda-matchers
+  shoulda-matchers!
   simple_bdd
   spring
   turbolinks

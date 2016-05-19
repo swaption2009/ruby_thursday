@@ -43,12 +43,6 @@ RSpec.configure do |config|
     DatabaseCleaner.clean_with(:truncation)
   end
 
-  Shoulda::Matchers.configure do |config|
-    config.integrate do |with|
-      with.test_framework :rspec
-      with.library :rails
-    end
-
   # Option 1: with 'capybara-webkit'
   Capybara.javascript_driver = :webkit
 
@@ -60,7 +54,13 @@ RSpec.configure do |config|
     DatabaseCleaner.clean
   end
 
-  end
+    Shoulda::Matchers.configure do |config|
+    config.integrate do |with|
+      with.test_framework :rspec
+      with.library :rails
+    end
+
+end
 
   # RSpec Rails can automatically mix in different behaviours to your tests
   # based on their file location, for example enabling you to call `get` and

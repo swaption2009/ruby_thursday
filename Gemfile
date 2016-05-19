@@ -47,6 +47,6 @@ group :development, :test do
   gem 'pry-nav'
   gem 'pry-rails', '~> 0.3.2'
   gem 'simple_bdd'
-  gem 'shoulda-matchers'
+  gem 'shoulda-matchers', require: false , github: 'thoughtbot/shoulda-matchers'
   gem 'spring'
 end
